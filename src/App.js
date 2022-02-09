@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import { Component } from "react/cjs/react.production.min";
+import Category from "./components/Category";
+import Home from "./components/Home"
+import SideBar from "./components/SideBar";
+import Jarvis from "./components/Jarvis";
+import Settings from "./components/Settings";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <SideBar/>
+      <div style={{height: 'auto', width: '100%'}}>
+        <Home/>
+        <Category/>
+        <Jarvis/>
+        {/* <Settings/> */}
+      </div>
     </div>
   );
 }
