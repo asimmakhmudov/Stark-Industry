@@ -69,8 +69,10 @@ const SideBar = () => {
                             <a href="#jarvis">
                                 <MenuItem onClick={handleClick} icon={<GiAtomicSlashes />}>{menuCollapse ? ("") : ("Jarvis")}</MenuItem>
                             </a>
-                            <MenuItem icon={<RiMovie2Fill />}>{menuCollapse ? ("") : ("Movies")}</MenuItem>
-                            <MenuItem  onClick={togglePopup} icon={<BiCog />}>{menuCollapse ? ("") : ("Settings")}</MenuItem>
+                            <a href="#movies">
+                                <MenuItem icon={<RiMovie2Fill />}>{menuCollapse ? ("") : ("Movies")}</MenuItem>
+                            </a>
+                            <MenuItem onClick={togglePopup} icon={<BiCog />}>{menuCollapse ? ("") : ("Settings")}</MenuItem>
                             {isOpen && <Settings handleClose={togglePopup} />}
                         </Menu>
                     </SidebarContent>

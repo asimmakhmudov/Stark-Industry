@@ -3,7 +3,8 @@ import Category from "./components/Category";
 import Home from "./components/Home"
 import SideBar from "./components/SideBar";
 import Jarvis from "./components/Jarvis";
-import Settings from "./components/Settings";
+import Movies from "./components/Movies";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -13,7 +14,8 @@ function App() {
         <Home/>
         <Category/>
         <Jarvis/>
-        {/* <Settings/> */}
+        <Movies/>
+        <Footer/>
       </div>
     </div>
   );
